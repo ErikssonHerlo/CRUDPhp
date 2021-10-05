@@ -1,0 +1,12 @@
+CREATE DATABASE phpcrud;
+
+use php_mysql_crud;
+
+CREATE TABLE Tarea(
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  titulo VARCHAR(255) NOT NULL,
+  descripcion TEXT,
+  fecha_Creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DESCRIBE Tarea;
